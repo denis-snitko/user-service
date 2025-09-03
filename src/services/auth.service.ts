@@ -15,7 +15,7 @@ export async function register(data: RegisterDTO) {
       birthDate: data.birthDate,
       email: data.email,
       passwordHash,
-      role: Role.USER,
+      role: data.role as Role,
     },
     select: {
       id: true,

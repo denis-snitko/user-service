@@ -49,15 +49,7 @@ npm install
 
 ### 2. Настроить переменные окружения
 
-Создайте файл `.env` в корне проекта и заполните его следующими переменными:
-
-```env
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/users?schema=public"
-JWT_SECRET="your_jwt_secret"
-JWT_EXPIRES_IN="15m"
-JWT_REFRESH_EXPIRES_IN="7d"
-PORT=4000
-```
+Создайте файл `.env` в корне проекта и заполните его следуя примеру файла `.env.example`
 
 ### 3. Поднять базу данных в Docker
 
